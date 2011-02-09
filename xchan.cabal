@@ -1,0 +1,18 @@
+Name:                xchan
+Version:             0.1
+Synopsis:            Alternative to Control.Concurrent.Chan
+Description:         Alternative to Control.Concurrent.Chan that supports the 'isChanEmpty' and 'unGetChan' methods in a safe way 
+License:             BSD3
+Stability:           alpha
+License-file:        LICENSE
+Author:              Holger Reinhardt
+Category:            Network
+Maintainer:          Holger Reinhardt <hreinhardt@gmail.com>
+Build-Type:          Simple
+Cabal-Version:       >=1.2
+                     
+
+Library
+  Build-Depends:      base >= 4 && < 5, containers
+  Exposed-modules:    Control.Concurrent.XChan
+
